@@ -118,9 +118,9 @@ contract Dogs_Unleashed is ERC721Enumerable, Ownable {
   }
 
   //only owner
-  function reveal() public onlyOwner {
-      revealed = true;
-  }
+
+
+
   
   function setNftPerAddressLimit(uint256 _limit) public onlyOwner {
     nftPerAddressLimit = _limit;
@@ -142,9 +142,7 @@ contract Dogs_Unleashed is ERC721Enumerable, Ownable {
     baseExtension = _newBaseExtension;
   }
   
-  function setNotRevealedURI(string memory _notRevealedURI) public onlyOwner {
-    notRevealedUri = _notRevealedURI;
-  }
+
 
   function pause(bool _state) public onlyOwner {
     paused = _state;
